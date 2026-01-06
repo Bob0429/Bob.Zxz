@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Pribadi</title>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #e0f7fa, #ffffff);
+            color: #000000;
+            margin: 0;
+            padding: 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .biodata-container {
+            max-width: 900px;
+            margin: auto;
+            background-color: rgb(37, 124, 255);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(87, 78, 78, 0.1);
+            animation: fadeIn 1.5s ease;
+        }
+
+        h1 {
+            text-align: center;
+            color: #f5f5dc;
+            margin-bottom: 30px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid #f5f5dc;
+            transition: transform 0.3s ease;
+        }
+
+        .profile img:hover {
+            transform: scale(1.05);
+        }
+
+        .info {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .info li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .info li i {
+            color: #f5f5dc;
+            margin-right: 8px;
+        }
+
+        .section {
+            margin-top: 30px;
+            animation: fadeIn 1.2s ease;
+        }
+
+        .section h2 {
+            color: #f5f5dc;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        .section ul {
+            padding-left: 20px;
+        }
+
+        a {
+            color: #f5f5dc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .profile {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .profile img {
+                align-self: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="biodata-container">
+        <h1><i class="fas fa-user-circle"></i> Biodata Pribadi</h1>
+        <div class="profile">
+            <img src=bob.jpg alt="Foto Profil">
+            <ul class="info">
+                <li><i class="fas fa-id-card"></i><strong>Nama:</strong> Habib Ahmad Mubarok</li>
+                <li><i class="fas fa-calendar-alt"></i><strong> TTL:</strong> Semarang 04 Januari 2009</li>
+                <li><i class="fas fa-venus"></i><strong> Gender:</strong> Laki Laki</li>
+                <li><i class="fas fa-map-marker-alt"></i><strong> Alamat:</strong> Perumahan II PT GMP</li>
+                <li><i class="fas fa-phone"></i><strong> Telepon:</strong> 0853-8328-0649</li>
+                <li><i class="fab fa-instagram"></i><strong> Instagram:</strong> <a href='https://www.instagram.com/hbbmrk_04?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw'== target="_blank">@hbbmrk04</a></li>
+                <li><i class="fab fa-gogle drive"></i><strong Hasil karya:</strong> <a href='https://drive.google.com/file/d/1uPXZjBEB0A-TEbrdc2n2tBTsK22c8dL3/view?usp=drivesdk'== target="_blank">Hasil Karya Bob</a></li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-info-circle"></i> Tentang Saya</h2>
+            <p>
+            Habib Ahmad Mubarok biasa dipanggil Bob, adalah seorang pelajar SMA di SMA GMP yang dikenal sebagai pribadi humble, santai, dan mudah bergaul. Di usia 16 tahun, Bob sudah menunjukkan jiwa yang suka tantangan dan punya semangat tinggi dalam menjalani berbagai hal, baik di sekolah maupun di luar.
+Hobi utamanya adalah mancing, tempat dia menemukan ketenangan dan kesabaran, serta bermain game sebagai cara untuk bersenang-senang dan melatih strategi. Bob adalah tipe orang yang berteman tanpa pandang bulu, selalu terbuka dan siap menyambut siapa saja dalam lingkaran pertemanannya.
+        
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-trophy"></i> Pencapaian</h2>
+            <ul>
+                <li>🏆 Juara 3 Lomba Cipta Lagu Tingkat Kabupaten</li>
+                <li>🏆 Juara 3 Lomba Pantomim Tingkat Kabupaten</li>
+                <li>🧑‍💼 Juara 1 Lomba Kultum </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2><i class="fas fa-lightbulb"></i> Fakta Menarik</h2>
+            <ul>
+                <li>💻 Suka bermain game eFootball dan Mobile Legends</li>
+                <li>🐱 Pecinta kucing</li>
+                <li>🎹 Bisa memainkan alat musik Gitar dan Piano</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
